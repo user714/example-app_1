@@ -17,14 +17,14 @@
         </div>
         <div style="display: grid;  grid-template-columns: 1fr  1fr 1fr  1fr 1fr;  padding-bottom: 10px; padding-top: 10px;">
             <div>
-                <select id="id_from_user"  v-model="id_from_user" autocomplete="off">
+                <select id="id_from_user"  v-model="id_from_user" autocomplete="off" style="width: 100%;">
                     <template  v-for="user in users_list">
                         <option v-bind:value="user.id">{{user.firstname}} {{user.lastname}} {{user.patronymic}}</option>
                     </template>
                 </select>
             </div>
             <div>
-                <select id="id_to_user" v-model="id_to_user"  autocomplete="off">
+                <select id="id_to_user" v-model="id_to_user"  autocomplete="off" style="width: 100%;">
                     <template  v-for="user in users_list">
                         <option v-bind:value="user.id">{{user.firstname}} {{user.lastname}} {{user.patronymic}}</option>
                     </template>
